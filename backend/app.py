@@ -22,6 +22,7 @@ app = Flask(__name__)
 # Fix CORS configuration - specify origins properly for development
 CORS(app, 
      origins=["https://test-qccn.onrender.com"], 
+     test-c3yt-abhinavs-projects-8f0d61e5.vercel.app,
      supports_credentials=True,
      allow_headers=["Content-Type", "Authorization"],
      methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
