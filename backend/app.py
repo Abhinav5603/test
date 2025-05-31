@@ -21,7 +21,7 @@ app = Flask(__name__)
 
 # Fix CORS configuration - specify origins properly for development
 CORS(app, 
-     origins=["http://localhost:5173"], 
+     origins=["https://test-qccn.onrender.com"], 
      supports_credentials=True,
      allow_headers=["Content-Type", "Authorization"],
      methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"])
@@ -649,7 +649,7 @@ if __name__ == "__main__":
     
     try:
         print(f"🚀 Starting Flask application on port {port}...")
-        print(f"🌐 CORS enabled for: http://localhost:5173, http://localhost:3000")
+        print(f"🌐 CORS enabled for: https://test-qccn.onrender.com, http://localhost:3000")
         print(f"🗄️ Database: {'Connected' if client else 'Local development mode'}")
         
         app.run(
